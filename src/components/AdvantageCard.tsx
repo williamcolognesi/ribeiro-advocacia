@@ -8,12 +8,14 @@ interface AdvantageCardProps {
 
 export function AdvantageCard({ icon, titulo, descricao }: AdvantageCardProps) {
   return (
-    <div className="border p-4 rounded-3xl space-y-2 bg-white/80 ">
+    <div className="p-6 rounded-3xl space-y-2 bg-red ">
       <div className="flex items-center space-x-2">
-        {icon}
-        <div className="font-bold text-lg">{titulo}</div>
+        <div className="flex items-center justify-center rounded-lg bg-white w-12 h-12 text-red">
+          {icon}
+        </div>
+        <div className="font-bold text-lg text-white">{titulo}</div>
       </div>
-      <div className="text-sm text-gray-700">{descricao}</div>
+      <div className="text-white text-body text-justify">{descricao}</div>
     </div>
   )
 }

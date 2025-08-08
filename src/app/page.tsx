@@ -15,8 +15,8 @@ export default function Home() {
       <Content />
       <AdvantageSection />
       <TestimonySection />
-      <FaqSection />
       <CtaSection />
+      <FaqSection />
       <ContentMaps />
     </main>
   )

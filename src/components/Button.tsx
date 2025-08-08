@@ -1,14 +1,24 @@
-import { ComponentProps } from "react"
+import { ArrowRight } from "lucide-react"
 
-interface ButtonProps extends ComponentProps<"button"> {}
+interface ButtonProps {
+  outlined: boolean
+  color: string
+  children: React.ReactNode
+}
 
-export function Button(props: ButtonProps) {
+export function Button({ outlined, color, children }: ButtonProps) {
   return (
-    <a href="https://wa.me/" target="_blank">
+    <a href="https://wa.me/5519992753375" target="_blank">
       <button
-        className="flex justify-between items-center px-5 h-12 bg-emerald-500 text-white font-semibold rounded-xl cursor-pointer transition-colors duration-300 hover:bg-danger-900"
-        {...props}
-      />
+        style={{
+          backgroundColor: outlined ? "transparent" : color,
+          color: outlined ? color : "white",
+          border: outlined ? `1px solid ${color}` : undefined,
+        }}
+        className="flex justify-between items-center gap-2 px-5 h-12 text-white font-semibold rounded-xl cursor-pointer"
+      >
+        {children}
+      </button>
     </a>
   )
 }
