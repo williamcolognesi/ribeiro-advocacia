@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { TestimonyCard } from "@/components/TestimonyCard"
 import Image from "next/image"
 import Slider from "react-slick"
@@ -7,55 +8,37 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../app/testimony-slider.css"
 import { ArrowLeft, ArrowRight } from "lucide-react"
+import { useWindowSize } from "@/lib/utils"
 
 export function TestimonySection() {
+  const [mounted, setMounted] = useState(false)
+  const size = useWindowSize()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
+
   var settings = {
     dots: true,
-    infinite: true,
-    speed: 1500,
-    slidesToShow: 4,
+    slidesToShow: size.width > 1200 ? 3 : 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
+    speed: 500,
+    autoplay: false,
+    swipeToSlide: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    arrows: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 2,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          dots: true,
-        },
-      },
-    ],
   }
 
   return (
     <section className="px-8 py-8 md:px-16 md:py-20 space-y-8 md:space-x-8">
       <div className="space-y-4">
         <div className="text-center space-y-2 text-gray-600">
-          <h2 className="font-bold text-5xl leading-14">
-            Nota máxima em avaliação
-          </h2>
+          <h2>Nota máxima em avaliação</h2>
           <p>
             Nosso escritório conta com nota maxima em avaliação com mais de 31
             depoimentos de clientes satisfeitos, veja alguns dos nossos cases de
@@ -65,7 +48,12 @@ export function TestimonySection() {
         <div className="flex space-x-4">
           <div className="grid grid-cols-12">
             <div className="col-span-12">
-              <Slider {...settings}>
+              <Slider
+                key={
+                  typeof window !== "undefined" ? window.innerWidth : "default"
+                }
+                {...settings}
+              >
                 <TestimonyCard
                   foto={
                     <Image

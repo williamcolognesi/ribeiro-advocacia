@@ -14,7 +14,7 @@ export function Hero() {
 
       <div className="relative grid grid-cols-12">
         <div className="col-span-12 md:col-span-7 space-y-2 text-white text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1>
             Bem-vindo ao Ribeiro Advocacia
           </h1>
           <p className="text-base md:text-lg leading-relaxed">
