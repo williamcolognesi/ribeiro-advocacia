@@ -35,7 +35,7 @@ export function TestimonySection() {
   }
 
   return (
-    <section className="px-8 py-8 md:px-16 md:py-20 space-y-8 md:space-x-8">
+    <section className="px-4 py-8 md:px-16 md:py-20 space-y-8 md:space-x-8">
       <div className="space-y-4">
         <div className="text-center space-y-2 text-gray-600">
           <h2>Nota máxima em avaliação</h2>

@@ -1,9 +1,10 @@
 import Image from "next/image"
 import logo from "../../public/logo.png"
+import Link from "next/link"
 
 export function ContentMaps() {
   return (
-    <section className="px-8 py-8 md:px-16 md:py-20 grid grid-cols-12 space-y-8 md:space-x-8">
+    <section className="px-4 py-8 md:px-16 md:py-20 grid grid-cols-12 space-y-8 md:space-x-8">
       <div className="col-span-12 md:col-span-5">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1839.8596983765733!2d-47.368620683318724!3d-22.73866875159217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89d41f0b05e2f%3A0xff03af964d01bc93!2sRibeiro%20Advocacia!5e0!3m2!1spt-BR!2sbr!4v1754434720727!5m2!1spt-BR!2sbr"
@@ -17,7 +18,9 @@ export function ContentMaps() {
           <div className="grid grid-cols-12 text-gray-600 space-y-2 md:space-y-4">
             <div className="col-span-12 lg:col-span-4">
               <h3 className="font-bold">Local</h3>
-              <p>Santa Bárbara d’Oeste - SP</p>
+              <p>
+                Rua Limeira, 1244, Cândido Bertine, Santa Bárbara d’Oeste/SP
+              </p>
             </div>
             <div className="col-span-12 lg:col-span-4">
               <h3 className="font-bold">Funcionamento</h3>
@@ -25,17 +28,27 @@ export function ContentMaps() {
             </div>
             <div className="col-span-12 lg:col-span-4">
               <h3 className="font-bold">Telefone</h3>
-              <p>(19) 99275-3375</p>
+              <Link href="https://wa.me/5519992753375">(19) 99275-337</Link>
             </div>
           </div>
           <div className="grid grid-cols-12 space-y-2 md:space-y-4">
             <div className="col-span-12 lg:col-span-4">
               <h3 className="font-bold">E-mail</h3>
-              <p>radv.contato@gmail.com</p>
+              <Link href="mailto:radv.contato@gmail.com">
+                radv.contato@gmail.com
+              </Link>
             </div>
             <div className="col-span-12 lg:col-span-4">
               <h3 className="font-bold">Instagram</h3>
-              <p>@advocaciaribeiro_</p>
+              <Link href="https://instagram/@advocaciaribeiro_">
+                @advocaciaribeiro_
+              </Link>
+            </div>
+            <div className="col-span-12 lg:col-span-4">
+              <h3 className="font-bold">Facebook</h3>
+              <Link href="https://facebook.com/advribeiro">
+                facebook.com/advribeiro
+              </Link>
             </div>
           </div>
         </div>

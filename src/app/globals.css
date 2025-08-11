@@ -24,6 +24,6 @@
     @apply text-[40px] leading-14 md:text-[56px] md:leading-16 font-bold;
   }
   h2 {
-    @apply text-4xl md:text-5xl md:leading-[56px] font-bold;
+    @apply text-4xl md:text-5xl md:leading-[56px] font-bold uppercase;
   }
 }

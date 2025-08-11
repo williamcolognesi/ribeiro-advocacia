@@ -2,7 +2,7 @@ import { Question } from "@/components/Question"
 
 export function FaqSection() {
   return (
-    <section className="px-8 py-8 md:px-16 md:py-20 space-y-8 md:space-x-8 bg-[#fafafa]">
+    <section className="px-4 py-8 md:px-16 md:py-20 space-y-8 md:space-x-8 bg-[#fafafa]">
       <div className="space-y-6">
         <div className="">
           <h2 className="font-bold text-5xl leading-14 text-gray-600">

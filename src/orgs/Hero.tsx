@@ -3,9 +3,9 @@ import { Button } from "@/components/Button"
 export function Hero() {
   return (
     <section
-      className="relative px-8 md:px-16 min-h-[calc(100dvh)] grid items-center "
+      className="relative px-4 md:px-16 min-h-[calc(100dvh)] grid items-center "
       style={{
-        backgroundImage: "url('/hero-advogado.png')",
+        backgroundImage: "url('/advogado-em-pe.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -14,9 +14,7 @@ export function Hero() {
 
       <div className="relative grid grid-cols-12">
         <div className="col-span-12 md:col-span-7 space-y-2 text-white text-center md:text-left">
-          <h1>
-            Bem-vindo ao Ribeiro Advocacia
-          </h1>
+          <h1>Bem-vindo ao Ribeiro Advocacia</h1>
           <p className="text-base md:text-lg leading-relaxed">
             Proteção e confiança para o que mais importa.
           </p>

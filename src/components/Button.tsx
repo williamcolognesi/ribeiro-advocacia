@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 interface ButtonProps {
   outlined: boolean
@@ -8,7 +9,7 @@ interface ButtonProps {
 
 export function Button({ outlined, color, children }: ButtonProps) {
   return (
-    <a href="https://wa.me/5519992753375" target="_blank">
+    <Link href="https://wa.me/5519992753375" target="_blank">
       <button
         style={{
           backgroundColor: outlined ? "transparent" : color,
@@ -19,6 +20,6 @@ export function Button({ outlined, color, children }: ButtonProps) {
       >
         {children}
       </button>
-    </a>
+    </Link>
   )
 }

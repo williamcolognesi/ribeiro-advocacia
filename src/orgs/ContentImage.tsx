@@ -4,7 +4,7 @@ import { Button } from "@/components/Button"
 
 export function Content() {
   return (
-    <section className="px-8 py-8 md:px-16 md:py-20 grid grid-cols-12 space-y-8 md:space-x-8">
+    <section className="px-4 py-8 md:px-16 md:py-20 grid grid-cols-12 space-y-8 md:space-x-8">
       <div className="col-span-12 md:col-span-1 flex flex-col text-center justify-center md:text-left space-y-4"></div>
       <div className="col-span-12 md:col-span-4 flex items-center justify-center left-0">
         <Image
