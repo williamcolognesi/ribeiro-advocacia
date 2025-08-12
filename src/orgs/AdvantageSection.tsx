@@ -20,7 +20,7 @@ export function AdvantageSection() {
     <section className="px-4 py-4 md:px-16 md:py-20 space-y-8 md:space-x-8">
       <div className="space-y-4">
         <div className="text-center space-y-2 text-gray-600">
-          <h2 className="font-bold">Áreas de atuação</h2>
+          <h2>Áreas de atuação</h2>
           <p className="text-lg">
             Atendemos pessoas físicas e pequenas empresas em conflitos jurídicos
             que exigem ação rápida, orientação precisa e domínio técnico.

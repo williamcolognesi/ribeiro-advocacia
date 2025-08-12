@@ -20,10 +20,18 @@
 }
 
 @layer base {
+  body {
+    font-family: var(--font-inter);
+  }
   h1 {
-    @apply text-[40px] leading-14 md:text-[56px] md:leading-16 font-bold;
+    @apply text-[40px] leading-14 md:text-[56px] md:leading-16 font-semibold;
+    font-family: var(--font-title);
   }
   h2 {
-    @apply text-4xl md:text-5xl md:leading-[56px] font-bold uppercase;
+    @apply text-3xl md:text-5xl md:leading-[56px] font-bold uppercase;
+    font-family: var(--font-title);
+  }
+  h3 {
+    font-family: var(--font-title);
   }
 }

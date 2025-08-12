@@ -2,14 +2,7 @@ import { Button } from "@/components/Button"
 
 export function Hero() {
   return (
-    <section
-      className="relative px-4 md:px-16 min-h-[calc(100dvh)] grid items-center "
-      style={{
-        backgroundImage: "url('/advogado-em-pe.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative px-4 md:px-16 min-h-[calc(100dvh)] grid items-center bg-cover bg-[url('/advogado-em-pe.jpg')] bg-center md:bg-[position:top]">
       <div className="absolute inset-0 bg-gray-900/70"></div>
 
       <div className="relative grid grid-cols-12">

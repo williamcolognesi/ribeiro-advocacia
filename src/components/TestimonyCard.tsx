@@ -36,9 +36,9 @@ export function TestimonyCard({
           </div>
         </div>
       </div>
-      <div className="text-sm text-gray-600 font-medium leading-6">
+      <p className="text-sm text-gray-600 font-medium leading-6">
         {depoimento}
-      </div>
+      </p>
     </div>
   )
 }

@@ -40,7 +40,7 @@ export function TestimonySection() {
         <div className="text-center space-y-2 text-gray-600">
           <h2>Nota máxima em avaliação</h2>
           <p>
-            Nosso escritório conta com nota maxima em avaliação com mais de 31
+            Nosso escritório conta com nota maxima em avaliação com dezenas de
             depoimentos de clientes satisfeitos, veja alguns dos nossos cases de
             sucesso.
           </p>

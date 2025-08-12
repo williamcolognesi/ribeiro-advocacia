@@ -28,7 +28,7 @@ export function ContentMaps() {
             </div>
             <div className="col-span-12 lg:col-span-4">
               <h3 className="font-bold">Telefone</h3>
-              <Link href="https://wa.me/5519992753375">(19) 99275-337</Link>
+              <Link href="https://wa.me/5519992753375">(19) 99275-3375</Link>
             </div>
           </div>
           <div className="grid grid-cols-12 space-y-2 md:space-y-4">

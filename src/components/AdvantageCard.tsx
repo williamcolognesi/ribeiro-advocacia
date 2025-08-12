@@ -13,9 +13,9 @@ export function AdvantageCard({ icon, titulo, descricao }: AdvantageCardProps) {
         <div className="flex items-center justify-center rounded-lg bg-white w-12 h-12 text-red">
           {icon}
         </div>
-        <div className="font-bold text-lg text-white">{titulo}</div>
+        <h3 className="font-bold text-lg text-white">{titulo}</h3>
       </div>
-      <div className="text-white text-body text-justify">{descricao}</div>
+      <p className="text-white text-body text-justify">{descricao}</p>
     </div>
   )
 }

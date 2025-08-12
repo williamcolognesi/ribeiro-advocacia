@@ -11,7 +11,7 @@ export function CtaSection() {
         <div className="lg:col-span-5 col-span-12 text-white space-y-6">
           <h2 className="text-3xl md:text-5xl normal-case">
             Sermos referência em advocacia resolutiva e precisa, com foco na
-            construção de soluções eficazes para problemas reais
+            construção de soluções eficazes para problemas reais.
           </h2>
           <Button color="#ffffff" outlined={true}>
             Entrar em contato

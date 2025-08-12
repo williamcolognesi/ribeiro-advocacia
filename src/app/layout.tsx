@@ -1,14 +1,20 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import {
+  Inter,
+  Cormorant_Garamond,
+  Playfair_Display,
+  Libre_Baskerville,
+  Plus_Jakarta_Sans,
+} from "next/font/google"
 import "./globals.css"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fontTitle = Plus_Jakarta_Sans({
+  variable: "--font-title",
   subsets: ["latin"],
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 })
 
@@ -39,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${inter.variable} ${fontTitle.variable}`}>
         {children}
       </body>
     </html>
