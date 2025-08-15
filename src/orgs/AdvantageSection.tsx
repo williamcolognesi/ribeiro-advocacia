@@ -21,7 +21,7 @@ export function AdvantageSection() {
       <div className="space-y-4">
         <div className="text-center space-y-2 text-gray-600">
           <h2>Áreas de atuação</h2>
-          <p className="text-lg">
+          <p>
             Atendemos pessoas físicas e pequenas empresas em conflitos jurídicos
             que exigem ação rápida, orientação precisa e domínio técnico.
             {<br />}
