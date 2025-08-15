@@ -7,6 +7,7 @@ import {
   Plus_Jakarta_Sans,
 } from "next/font/google"
 import "./globals.css"
+import { ButtonToTop } from "@/components/ButtonToTop"
 
 const fontTitle = Plus_Jakarta_Sans({
   variable: "--font-title",
@@ -47,6 +48,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${inter.variable} ${fontTitle.variable}`}>
         {children}
+        <ButtonToTop/>
       </body>
     </html>
   )
